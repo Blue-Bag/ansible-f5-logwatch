@@ -1,0 +1,40 @@
+---
+
+#Output/Format Options
+#By default Logwatch will print to stdout in text with no encoding.
+#To make email Default set Output = mail to save to file set Output = file
+# output formats [stdout | mail | file]
+logwatch_output: 'stdout'
+
+#To make Html the default formatting Format = html
+Format = {{ logwatch_format }}
+#To make Base64 [aka uuencode] Encode = base64
+Encode = {{ logwatch_encode }}
+
+# Default person to mail reports to.  Can be a local account or a
+# complete email address.  Variable Output should be set to mail, or
+# --output mail should be passed on command line to enable mail feature.
+logwatch_mailto: 'root'
+
+# Default person to mail reports from.  Can be a local account or a
+# complete email address.
+logwatch_mailfrom: 'Logwatch'
+
+# format [text | html]
+logwatch_format: 'text'
+
+# encoding [none | base64]
+logwatch_encode: 'none'
+
+# Analyse archives [yes | no]
+logwatch_archives: 'yes'
+
+# The current choices are All, Today, Yesterday
+logwatch_range: 'yesterday'
+
+# The default detail level for the report.
+# This can either be Low, Med, High or a number.
+# Low = 0
+# Med = 5
+# High = 10
+logwatch_detail: 'Med'

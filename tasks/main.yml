@@ -1,0 +1,10 @@
+---
+
+- name: Install Logwatch
+  apt: name=logwatch
+  sudo: true
+
+- name: Install Logwatch config
+  template: src=logwatch.conf.j2
+            dest=/usr/share/logwatch/default.conf/logwatch.conf
+  sudo: true
