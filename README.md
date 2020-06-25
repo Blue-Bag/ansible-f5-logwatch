@@ -2,7 +2,7 @@
 First5 Logwatch Role
 ==============
 
-[![Build Status](https://travis-ci.org/Blue-Bag/ansible-role-first5-logwatch.svg?branch=main)](https://travis-ci.org/Blue-Bag/ansible-role-first5-logwatch)
+[![Build Status](https://travis-ci.org/Blue-Bag/ansible-first5-logwatch.svg?branch=main)](https://travis-ci.org/Blue-Bag/ansible-first5-logwatch)
 
 
 Install and configure Logwatch.
