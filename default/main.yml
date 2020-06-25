@@ -1,15 +1,15 @@
 ---
 
-#Output/Format Options
-#By default Logwatch will print to stdout in text with no encoding.
-#To make email Default set Output = mail to save to file set Output = file
+# Output/Format Options
+# By default Logwatch will print to stdout in text with no encoding.
+# To make email Default set Output = mail to save to file set Output = file
 # output formats [stdout | mail | file]
 logwatch_output: 'stdout'
 
-#To make Html the default formatting Format = html
-#Format = {{ logwatch_format }}
-#To make Base64 [aka uuencode] Encode = base64
-#Encode = {{ logwatch_encode }}
+# To make Html the default formatting Format = html
+# Format = {{ logwatch_format }}
+# To make Base64 [aka uuencode] Encode = base64
+# Encode = {{ logwatch_encode }}
 
 # Default person to mail reports to.  Can be a local account or a
 # complete email address.  Variable Output should be set to mail, or
