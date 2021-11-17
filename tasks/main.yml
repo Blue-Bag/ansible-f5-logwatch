@@ -5,6 +5,7 @@
   become: true
 
 - name: Install Logwatch config
-  template: src=logwatch.conf.j2
-            dest=/usr/share/logwatch/default.conf/logwatch.conf
+  template:
+    src: logwatch.conf.j2
+    dest: /usr/share/logwatch/default.conf/logwatch.conf
   become: true
